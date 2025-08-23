@@ -1,7 +1,9 @@
-import Image from "next/image";
+import NavbarSection from "@/sections/navbar-section/page";
 
 export default function Home() {
   return (
-    <div>Portfolio Suphanat Chanlek</div>
+    <main>
+      <NavbarSection />
+    </main>
   );
 }

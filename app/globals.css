@@ -3,3 +3,7 @@
 body {
   font-family: var(--font-geist-inter);
 }
+
+.my-manrope-text {
+  font-family: var(--font-geist-manrope);
+}
