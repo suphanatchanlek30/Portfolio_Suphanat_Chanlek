@@ -1,7 +1,13 @@
-import Image from "next/image";
+import HeroSection from "@/sections/hero-section/page";
+import NavbarSection from "@/sections/navbar-section/page";
 
 export default function Home() {
   return (
-    <div>Portfolio Suphanat Chanlek</div>
+    <main>
+      <NavbarSection />
+      <div>
+        <HeroSection />
+      </div>
+    </main>
   );
 }
