@@ -9,8 +9,8 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="mx-auto w-full bg-black text-white py-4 border-b border-[#212429] p-4">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black text-white border-b border-[#212429]">
+      <div className="container mx-auto flex items-center justify-between py-4 px-4">
         {/* Logo / Name */}
         <div className="my-manrope-text text-[24px] font-semibold">Suphanat</div>
 
