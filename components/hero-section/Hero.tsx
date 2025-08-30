@@ -20,7 +20,7 @@ export default function Hero() {
             buttonText={heroData.buttonText}
           />
         </div>
-         <div className="hidden md:hidden absolute lg:block lg:left-30 lg:top-1/3 -translate-y-1/2">
+         <div className="hidden md:hidden absolute lg:block lg:left-5 lg:top-1/3 xl:block xl:left-60 xl:top-1/3 -translate-y-1/2">
            <HeroImage src={heroData.image} />
          </div>
       </div>
