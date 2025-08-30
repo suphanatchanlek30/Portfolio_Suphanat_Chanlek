@@ -5,7 +5,7 @@ import HeroContent from "./HeroContent";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-full pb-20 md:pb-20 lg:pb-40 flex items-start justify-center bg-black text-white overflow-hidden">
+    <section className="relative w-full h-full pb-20 md:pb-20 lg:pb-40 flex items-start justify-center bg-black text-white overflow-hidden pt-10">
       {/* Background วงกลมสว่าง */}
       <div className="absolute inset-0 flex items-start justify-center">
         <div className="w-[700px] h-[300px] bg-white/30 rounded-full blur-[180px]"></div>
