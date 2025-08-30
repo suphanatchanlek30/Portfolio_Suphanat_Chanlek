@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 flex items-start justify-center">
         <div className="w-[700px] h-[300px] bg-white/30 rounded-full blur-[180px]"></div>
       </div>
-       <div className="container relative z-10 mx-auto flex items-center justify-center px-6 mt-30 min-h-[400px]">
+       <div className="container relative z-10 mx-auto flex items-center justify-center px-4 mt-15 md:mt-30 min-h-[400px]">
         {/* ชื่อและเนื้อหาอยู่กลางจอ */}
          <div className="w-full flex justify-center">
           <HeroContent
