@@ -15,10 +15,10 @@ export default function HeroContent({
   buttonText,
 }: HeroContentProps) {
   return (
-    <div className="text-center md:text-center max-w-3xl">
+    <div className="text-center md:text-center max-w-3xl px-4">
       <p className="text-[#929CA5] mb-2 text-xl font-normal">{title}</p>
       <h1 className="text-[#FFFFFF] opacity-90 text-[56px] md:text-[64px] font-semibold mb-4">{name}</h1>
-      <p className="text-[#929CA5] text-lg font-normal">{description}</p>
+      <p className="text-[#929CA5] text-sm md:text-lg font-normal">{description}</p>
       <HeroButton text={buttonText}/>
     </div>
   );

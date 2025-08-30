@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 flex items-start justify-center">
         <div className="w-[700px] h-[300px] bg-white/30 rounded-full blur-[180px]"></div>
       </div>
-       <div className="container relative z-10 mx-auto flex items-center justify-center px-4 mt-15 md:mt-30 min-h-[400px]">
+       <div className="container relative z-10 mx-auto flex items-center justify-center px-2 mt-15 md:mt-30 min-h-[400px]">
         {/* ชื่อและเนื้อหาอยู่กลางจอ */}
          <div className="w-full flex justify-center">
           <HeroContent
@@ -20,7 +20,7 @@ export default function Hero() {
             buttonText={heroData.buttonText}
           />
         </div>
-         <div className="hidden md:block absolute left-30 top-1/3 -translate-y-1/2">
+         <div className="hidden md:block absolute md:hidden lg:block lg:left-30 lg:top-1/3 -translate-y-1/2">
            <HeroImage src={heroData.image} />
          </div>
       </div>
