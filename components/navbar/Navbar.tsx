@@ -37,14 +37,14 @@ export default function Navbar() {
                 {/* Social Icons */}
                 <div className="flex space-x-3">
                     <Link
-                        href="https://github.com/your-username"
+                        href="https://github.com/suphanatchanlek30"
                         target="_blank"
                         className="flex items-center justify-center bg-white text-black h-[35px] w-[60px] rounded-[8px] hover:bg-gray-200 transition"
                     >
                         <FaGithub size={24} />
                     </Link>
                     <Link
-                        href="https://linkedin.com/in/your-username"
+                        href="https://www.linkedin.com/in/suphanat-chanlek-944802305/"
                         target="_blank"
                         className="flex items-center justify-center bg-white text-black h-[35px] w-[60px] rounded-[8px] hover:bg-gray-200 transition"
                     >
