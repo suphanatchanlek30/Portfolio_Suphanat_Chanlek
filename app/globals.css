@@ -8,3 +8,7 @@ body {
 .my-manrope-text {
   font-family: var(--font-geist-manrope);
 }
+
+html {
+  scroll-behavior: smooth;
+}

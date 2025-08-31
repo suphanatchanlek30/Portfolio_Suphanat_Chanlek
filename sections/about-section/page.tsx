@@ -2,7 +2,7 @@ import About from "@/components/about/About";
 
 export default function AboutSection() {
   return (
-    <section>
+    <section id="about">
       <About />
     </section>
   );
