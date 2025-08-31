@@ -1,4 +1,3 @@
-// components/about/About.tsx
 "use client";
 
 import Image from "next/image";
@@ -10,7 +9,7 @@ export default function About() {
     <section className="relative bg-black text-white py-12 md:py-24 px-6 overflow-hidden">
       {/* Background Blur */}
       <div className="absolute left-[210px] sm:left-[1100px] top-100 sm:top-80 -translate-x-1/2 z-0 w-full flex justify-center pointer-events-none">
-        <div className="w-[280px] h-[180px] md:w-[400px] md:h-[300px] bg-white/20 rounded-full blur-[100px] md:blur-[180px]"></div>
+        <div className="w-[280px] h-[180px] md:w-[400px] md:h-[300px] bg-white/20 rounded-full blur-[100px] md:blur-[180px]" />
       </div>
 
       <div className="container mx-auto relative z-10 max-w-7xl">
@@ -25,7 +24,7 @@ export default function About() {
         </h1>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-0 items-center">
           {/* Left: Image */}
           <div className="flex justify-center">
             <Image
@@ -42,20 +41,34 @@ export default function About() {
             <h2
               className="text-lg md:text-xl lg:text-2xl text-[#929CA5] font-normal mb-4"
               dangerouslySetInnerHTML={{ __html: aboutData.subtitle }}
-            ></h2>
+            />
             <p className="text-[#7A7B85] mb-6 text-sm md:text-base leading-relaxed">
               {aboutData.description}
             </p>
 
             {/* Education */}
             <h3 className="text-lg md:text-xl font-medium mb-4">Education</h3>
-            <div className="space-y-6 md:space-y-8 w-full max-w-[500px] mx-auto lg:mx-0">
+            <div className="space-y-6 md:space-y-8 w-full max-w-[600px] mx-auto lg:mx-0">
               <AboutCard
                 title={aboutData.education.degree}
                 subtitle={aboutData.education.university}
                 badge={aboutData.education.year}
               />
               <AboutCard email subtitle={aboutData.email} />
+            </div>
+
+            {/* Experience */}
+            <h3 className="text-lg md:text-xl font-medium mt-10 mb-4">Experience</h3>
+            <div className="space-y-6 md:space-y-8 w-full max-w-[600px] mx-auto lg:mx-0">
+              {aboutData.experience.map((exp, index) => (
+                <AboutCard
+                  key={index}
+                  title={exp.title}
+                  subtitle={exp.subtitle}
+                  badge={exp.year}
+                  image={exp.image} // ✅ ส่ง image เข้าไปด้วย
+                />
+              ))}
             </div>
           </div>
         </div>
