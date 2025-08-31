@@ -3,6 +3,7 @@ import FooterSection from "@/sections/footer-section/page";
 import HeroSection from "@/sections/hero-section/page";
 import MyServicesSection from "@/sections/my-services-section/page";
 import NavbarSection from "@/sections/navbar-section/page";
+import PortfolioSection from "@/sections/portfolio-section/page";
 import ProgrammingSkillSection from "@/sections/programming-skill-section/page";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <MyServicesSection />
         <AboutSection />
         <ProgrammingSkillSection />
+        <PortfolioSection />
       </div>
       <FooterSection />
     </main>
