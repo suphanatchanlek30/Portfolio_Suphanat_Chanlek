@@ -3,7 +3,9 @@
 import portfolioData from "@/instances/portfolio-data";
 import PortfolioCard from "./PortfolioCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/free-mode";
 
 export default function Portfolio() {
   return (
@@ -31,6 +33,10 @@ export default function Portfolio() {
           speed={600}
           cssMode={false}
           watchSlidesProgress={true}
+          freeMode={true}
+          centeredSlides={false}
+          modules={[FreeMode]}
+          style={{ WebkitOverflowScrolling: "touch", willChange: "transform" }}
           breakpoints={{
             320: { slidesPerView: 2, spaceBetween: 310 },
             480: { slidesPerView: 2, spaceBetween: 280 },
