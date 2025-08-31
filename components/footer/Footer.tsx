@@ -19,22 +19,22 @@ export default function Footer() {
           {/* Right: Menu */}
           <ul className="flex space-x-8 text-sm font-normal">
             <li>
-              <Link href="#home" className="hover:text-gray-300 transition">
+              <Link href="/#home" className="hover:text-gray-300 transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#what-i-do" className="hover:text-gray-300 transition">
+              <Link href="/#what-i-do" className="hover:text-gray-300 transition">
                 What I do
               </Link>
             </li>
             <li>
-              <Link href="#about" className="hover:text-gray-300 transition">
+              <Link href="/#about" className="hover:text-gray-300 transition">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#portfolio" className="hover:text-gray-300 transition">
+              <Link href="/#portfolio" className="hover:text-gray-300 transition">
                 Portfolio
               </Link>
             </li>
@@ -49,22 +49,22 @@ export default function Footer() {
               Suphanat
             </li>
             <li>
-              <Link href="#home" className="hover:text-gray-300 transition">
+              <Link href="/#home" className="hover:text-gray-300 transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#what-i-do" className="hover:text-gray-300 transition">
+              <Link href="/#what-i-do" className="hover:text-gray-300 transition">
                 What I do
               </Link>
             </li>
             <li>
-              <Link href="#about" className="hover:text-gray-300 transition">
+              <Link href="/#about" className="hover:text-gray-300 transition">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#portfolio" className="hover:text-gray-300 transition">
+              <Link href="/#portfolio" className="hover:text-gray-300 transition">
                 Portfolio
               </Link>
             </li>

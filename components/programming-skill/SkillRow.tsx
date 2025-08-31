@@ -14,7 +14,7 @@ export default function SkillRow({
   direction = "right",
   speed = 30,
 }: SkillRowProps) {
-  // ✅ render skills ซ้ำหลายรอบ เพื่อให้ scroll ได้เนียน
+  // render skills ซ้ำหลายรอบ เพื่อให้ scroll ได้เนียน
   const repeated = Array(5).fill(skills).flat();
 
   return (

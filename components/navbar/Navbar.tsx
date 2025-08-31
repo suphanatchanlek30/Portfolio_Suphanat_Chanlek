@@ -17,22 +17,22 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-[16px] font-normal">
           <li>
-            <Link href="#home" className="hover:text-gray-300 transition">
+            <Link href="/#home" className="hover:text-gray-300 transition">
               Home
             </Link>
           </li>
           <li>
-            <Link href="#what-i-do" className="hover:text-gray-300 transition">
+            <Link href="/#what-i-do" className="hover:text-gray-300 transition">
               What I do
             </Link>
           </li>
           <li>
-            <Link href="#about" className="hover:text-gray-300 transition">
+            <Link href="/#about" className="hover:text-gray-300 transition">
               About
             </Link>
           </li>
           <li>
-            <Link href="#portfolio" className="hover:text-gray-300 transition">
+            <Link href="/#portfolio" className="hover:text-gray-300 transition">
               Portfolio
             </Link>
           </li>
@@ -81,22 +81,22 @@ export default function Navbar() {
           </div>
           <ul className="flex flex-col items-center justify-start flex-1 space-y-8 text-[20px] font-normal mt-20">
             <li>
-              <Link href="#home" onClick={() => setMenuOpen(false)}>
+              <Link href="/#home" onClick={() => setMenuOpen(false)}>
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#what-i-do" onClick={() => setMenuOpen(false)}>
+              <Link href="/#what-i-do" onClick={() => setMenuOpen(false)}>
                 What I do
               </Link>
             </li>
             <li>
-              <Link href="#about" onClick={() => setMenuOpen(false)}>
+              <Link href="/#about" onClick={() => setMenuOpen(false)}>
                 About
               </Link>
             </li>
             <li>
-              <Link href="#portfolio" onClick={() => setMenuOpen(false)}>
+              <Link href="/#portfolio" onClick={() => setMenuOpen(false)}>
                 Portfolio
               </Link>
             </li>

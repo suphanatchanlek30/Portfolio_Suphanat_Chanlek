@@ -23,7 +23,7 @@ export default function AboutCard({
   return (
     <div className="bg-[#000000] rounded-xl px-4 py-4 md:px-6 md:py-5 border border-[#FFFFFF] hover:border-gray-400 transition shadow-sm w-full">
       {email ? (
-        // 📧 Email Card
+        // Email Card
         <div className="flex items-center gap-4 md:gap-5 text-left">
           <IoMailUnreadOutline className="text-3xl md:text-[38px] text-white" />
           <div className="flex flex-col">
@@ -34,16 +34,16 @@ export default function AboutCard({
           </div>
         </div>
       ) : image ? (
-        // 💼 Experience Card
+        // Experience Card
         <div className="flex flex-row items-center gap-4 text-left">
           {/* โลโก้ชิดซ้าย + ชัด */}
           <div className="flex-shrink-0 flex items-center justify-center">
             <Image
               src={image}
               alt={title || "Company Logo"}
-              width={50}   // 👉 ใช้ขนาดใหญ่พอ (เช่น 80px หรือไฟล์จริง)
+              width={50}   // ใช้ขนาดใหญ่พอ (เช่น 80px หรือไฟล์จริง)
               height={50}
-              unoptimized   // 👉 โหลดภาพไฟล์จริงไม่บีบ
+              unoptimized   // โหลดภาพไฟล์จริงไม่บีบ
               className="object-contain"
             />
           </div>
@@ -68,7 +68,7 @@ export default function AboutCard({
           </div>
         </div>
       ) : (
-        // 🎓 Education Card
+        // Education Card
         <div className="flex flex-col gap-2 text-left">
           <div className="flex items-center justify-between">
             <span className="text-[#929CA5] text-xs md:text-sm font-normal">
