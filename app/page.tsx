@@ -1,4 +1,5 @@
 import AboutSection from "@/sections/about-section/page";
+import FooterSection from "@/sections/footer-section/page";
 import HeroSection from "@/sections/hero-section/page";
 import MyServicesSection from "@/sections/my-services-section/page";
 import NavbarSection from "@/sections/navbar-section/page";
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutSection />
         <ProgrammingSkillSection />
       </div>
+      <FooterSection />
     </main>
   );
 }
