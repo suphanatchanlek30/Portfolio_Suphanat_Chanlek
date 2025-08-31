@@ -2,7 +2,7 @@ import myServicesData from "@/instances/myservices-data";
 
 export default function MyServices() {
   return (
-    <section className="relative bg-black text-white py-12 md:py-16 px-6 md:px-6 overflow-hidden">
+    <section className="relative bg-black text-white py-12 md:py-32 px-6 md:px-6 overflow-hidden">
       {/* Background วงกลมสว่าง */}
       <div className="absolute left-1/2 top-28 md:top-50 -translate-x-1/2 z-0 w-full flex justify-center pointer-events-none">
         <div className="w-[350px] h-[200px] md:w-[400px] md:h-[300px] bg-white/20 rounded-full blur-[120px] md:blur-[180px]"></div>
