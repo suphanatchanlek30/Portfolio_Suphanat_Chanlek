@@ -10,10 +10,10 @@ import "swiper/css/free-mode";
 export default function Portfolio() {
   return (
     <section className="relative bg-black text-white py-12 md:py-24 px-6 overflow-hidden">
-      {/* ไฟมุมตกแต่ง */}
-      <div className="absolute top-[180px] left-0 w-40 h-40 md:w-72 md:h-72 bg-gray-500/30 blur-3xl rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-      <div className="absolute bottom-[720px] right-0 w-40 h-40 md:w-72 md:h-72 bg-gray-500/30 blur-3xl rounded-full translate-x-1/2 translate-y-1/2 pointer-events-none" />
-      <div className="absolute bottom-1/3 right-0 w-32 h-32 md:w-56 md:h-56 bg-gray-500/20 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+  {/* ไฟมุมตกแต่ง (ลด blur เพื่อความลื่นบน iOS) */}
+  <div className="absolute top-[180px] left-0 w-40 h-40 md:w-72 md:h-72 bg-gray-500/30 blur-xl md:blur-2xl rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+  <div className="absolute bottom-[720px] right-0 w-40 h-40 md:w-72 md:h-72 bg-gray-500/30 blur-xl md:blur-2xl rounded-full translate-x-1/2 translate-y-1/2 pointer-events-none" />
+  <div className="absolute bottom-1/3 right-0 w-32 h-32 md:w-56 md:h-56 bg-gray-500/20 blur-lg md:blur-xl rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Title */}
@@ -33,10 +33,15 @@ export default function Portfolio() {
           speed={600}
           cssMode={false}
           watchSlidesProgress={true}
-          freeMode={true}
+          freeMode={false}
           centeredSlides={false}
-          modules={[FreeMode]}
-          style={{ WebkitOverflowScrolling: "touch", willChange: "transform" }}
+          slidesPerGroup={1}
+          style={{
+            WebkitOverflowScrolling: "touch",
+            willChange: "transform",
+            transform: "translate3d(0,0,0)",
+            touchAction: "pan-x"
+          }}
           breakpoints={{
             320: { slidesPerView: 2, spaceBetween: 310 },
             480: { slidesPerView: 2, spaceBetween: 280 },
