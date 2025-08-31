@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Mobile */}
         <div className="md:hidden flex flex-col items-center space-y-3">
           {/* Logo + Menu ในแถวเดียวกัน */}
-          <ul className="flex flex-wrap justify-center gap-6 text-sm font-normal items-center">
+          <ul className="flex flex-wrap justify-center gap-5 text-sm font-normal items-center">
             <li className="my-manrope-text text-base font-semibold text-white">
               Suphanat
             </li>
