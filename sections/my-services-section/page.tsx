@@ -2,8 +2,8 @@ import MyServices from "@/components/my-services/MyServices";
 
 export default function MyServicesSection() {
     return (
-        <div>
+        <section>
             <MyServices />
-        </div>
+        </section>
     );
 }
