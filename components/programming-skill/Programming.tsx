@@ -14,6 +14,11 @@ export default function Programming() {
 
   return (
     <section className="relative bg-black text-white py-12 md:py-24 px-6 overflow-hidden">
+      {/* ไฟมุมตกแต่ง */}
+      <div className="absolute top-0 left-0 w-40 h-40 md:w-72 md:h-72 bg-gray-500/30 blur-3xl rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-40 h-40 md:w-72 md:h-72 bg-gray-500/30 blur-3xl rounded-full translate-x-1/2 translate-y-1/2 pointer-events-none" />
+      <div className="absolute top-1/2 right-0 w-32 h-32 md:w-56 md:h-56 bg-gray-500/20 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Title */}
         <div className="flex justify-center mb-3 md:mb-4">
