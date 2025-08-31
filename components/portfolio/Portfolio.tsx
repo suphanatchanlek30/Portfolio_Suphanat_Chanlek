@@ -29,15 +29,15 @@ export default function Portfolio() {
           grabCursor={true}
           loop={true}
           breakpoints={{
-            // 📱 มือถือเล็ก
+            // มือถือเล็ก
             320: { slidesPerView: 2, spaceBetween: 310 },
-            // 📱 มือถือใหญ่
+            // มือถือใหญ่
             480: { slidesPerView: 2, spaceBetween: 280 },
-            // 📱 Tablet
+            // Tablet
             640: { slidesPerView: 3.2, spaceBetween: 280 },
-            // 💻 Laptop
+            // Laptop
             1024: { slidesPerView: 3.2, spaceBetween: 60 },
-            // 🖥 Desktop
+            // Desktop
             1440: { slidesPerView: 4.2, spaceBetween: 200 },
           }}
         >

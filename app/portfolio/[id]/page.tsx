@@ -4,7 +4,7 @@ import portfolioData from "@/instances/portfolio-data";
 import FooterSection from "@/sections/footer-section/page";
 import NavbarSection from "@/sections/navbar-section/page";
 import { notFound, useRouter } from "next/navigation";
-import React, { use } from "react"; // 👈 import use
+import React, { use } from "react"; // import use
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -12,7 +12,7 @@ type Props = {
 
 export default function PortfolioDetail({ params }: Props) {
   const router = useRouter();
-  const { id } = use(params); // 👈 unwrap params ด้วย use()
+  const { id } = use(params); // unwrap params ด้วย use()
 
   const project = portfolioData.find((p) => p.id === id);
   if (!project) return notFound();
