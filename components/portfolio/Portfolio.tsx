@@ -28,16 +28,14 @@ export default function Portfolio() {
         <Swiper
           grabCursor={true}
           loop={true}
+          speed={600}
+          cssMode={false}
+          watchSlidesProgress={true}
           breakpoints={{
-            // มือถือเล็ก
             320: { slidesPerView: 2, spaceBetween: 310 },
-            // มือถือใหญ่
             480: { slidesPerView: 2, spaceBetween: 280 },
-            // Tablet
             640: { slidesPerView: 3.2, spaceBetween: 280 },
-            // Laptop
             1024: { slidesPerView: 3.2, spaceBetween: 60 },
-            // Desktop
             1440: { slidesPerView: 4.2, spaceBetween: 200 },
           }}
         >

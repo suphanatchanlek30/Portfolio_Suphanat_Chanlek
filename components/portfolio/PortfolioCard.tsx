@@ -16,7 +16,9 @@ export default function PortfolioCard({ item }: Props) {
           src={item.image}
           alt={item.title}
           fill          // ทำให้เต็มพื้นที่ container
+          sizes="300px"
           className="object-cover rounded-lg"
+          loading="lazy"
         />
       </div>
 
