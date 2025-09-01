@@ -6,7 +6,6 @@
 import competitionData from "@/instances/competition-data";
 import CompetitionCard from "./CompetitionCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 
