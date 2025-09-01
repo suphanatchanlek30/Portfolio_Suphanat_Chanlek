@@ -1,4 +1,5 @@
 import AboutSection from "@/sections/about-section/page";
+import CompetitionSection from "@/sections/competition-section/page";
 import FooterSection from "@/sections/footer-section/page";
 import HeroSection from "@/sections/hero-section/page";
 import MyServicesSection from "@/sections/my-services-section/page";
@@ -16,6 +17,7 @@ export default function Home() {
         <AboutSection />
         <ProgrammingSkillSection />
         <PortfolioSection />
+        <CompetitionSection />
       </div>
       <FooterSection />
     </main>
