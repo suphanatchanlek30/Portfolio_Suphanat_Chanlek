@@ -25,7 +25,7 @@ const portfolioData: PortfolioItem[] = [
       { label: "Java", icon: FaJava  },
       { label: "Spring Boot", icon: BiLogoSpringBoot  },
       { label: "Microsoft SQL Server", icon: DiMsqlServer },
-      { label: "Tailwind", icon: SiTailwindcss },
+      { label: "TailwindCSS", icon: SiTailwindcss },
       { label: "Cloudinary", icon: SiCloudinary },
       { label: "Docker", icon: FaDocker },
     ],
@@ -40,7 +40,7 @@ const portfolioData: PortfolioItem[] = [
     tech: [
       { label: "Next.js", icon: SiNextdotjs },
       { label: "Nest.js", icon: SiNestjs  },
-      { label: "Tailwind", icon: SiTailwindcss },
+      { label: "TailwindCSS", icon: SiTailwindcss },
       { label: "TypeScript", icon: SiTypescript  },
       { label: "PostgreSQL", icon: BiLogoPostgresql  },
     ],
