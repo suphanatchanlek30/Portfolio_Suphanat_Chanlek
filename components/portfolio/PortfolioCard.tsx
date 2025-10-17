@@ -30,7 +30,7 @@ export default function PortfolioCard({ item }: Props) {
       {/* ปุ่ม More */}
       <div className="flex justify-center mt-4">
         <Link
-          href={`/competition/${item.id}`}
+          href={`/portfolio/${item.id}`}
           className="w-[96.45px] h-[34.5px] flex items-center justify-center gap-2 border border-[#1A1C29] rounded-lg text-sm text-[#CFD3DA] hover:bg-[#191919] transition"
         >
           <FiCode className="text-lg" />

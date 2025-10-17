@@ -7,6 +7,7 @@ import NavbarSection from "@/sections/navbar-section/page";
 import { notFound } from "next/navigation";
 import React, { use } from "react"; 
 import Image from "next/image"; // ใช้ Image ของ Next.js
+import Link from "next/link";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -30,7 +31,7 @@ export default function PortfolioDetail({ params }: Props) {
           </h1>
 
           {/* Project Image */}
-          <div className="w-full flex justify-center mb-6">
+          <div className="w-full flex justify-center mb-8">
             <Image
               src={project.image}
               alt={project.title}
@@ -70,6 +71,24 @@ export default function PortfolioDetail({ params }: Props) {
           </button> 
           */}
         </div>
+
+        {/* Button Link (show only if linkURL exists) */}
+        {(() => {
+          const link = (project.linkURL ?? "").trim();
+          if (!link) return null;
+          const isExternal = /^https?:\/\//.test(link);
+          return (
+            <div className="flex justify-center mt-8">
+              <Link
+                href={link}
+                className="px-5 py-2 bg-white text-black rounded-lg hover:bg-gray-200 transition"
+                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              >
+                Link to Project
+              </Link>
+            </div>
+          );
+        })()}
       </section>
 
       <FooterSection />
