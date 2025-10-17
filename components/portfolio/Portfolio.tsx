@@ -17,11 +17,11 @@ export default function Portfolio() {
         {/* Title */}
         <div className="flex justify-center mb-3 md:mb-4">
           <span className="px-4 md:px-5 py-1 rounded-[8px] bg-[#191919] text-white text-xs md:text-sm">
-            Competition Experience
+            Projects Experience
           </span>
         </div>
         <h1 className="text-base md:text-xl font-normal text-center mb-8 md:mb-12 text-[#929CA5]">
-          What Competition Experience ?
+          What Projects Experience ?
         </h1>
 
         {/* Swiper Carousel */}
@@ -38,7 +38,7 @@ export default function Portfolio() {
             WebkitOverflowScrolling: "touch",
             willChange: "transform",
             transform: "translate3d(0,0,0)",
-            touchAction: "pan-x"
+            touchAction: "pan-x",
           }}
           breakpoints={{
             320: { slidesPerView: 2, spaceBetween: 310 },

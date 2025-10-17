@@ -2,7 +2,18 @@ import { IconType } from "react-icons";
 import { BiLogoPostgresql, BiLogoSpringBoot } from "react-icons/bi";
 import { DiMsqlServer } from "react-icons/di";
 import { FaReact, FaNodeJs, FaPython, FaJava, FaDocker } from "react-icons/fa";
-import { SiNextdotjs, SiMongodb, SiTailwindcss, SiCloudinary, SiNestjs, SiTypescript, SiNumpy, SiOpencv, SiStreamlit, SiRender } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiMongodb,
+  SiTailwindcss,
+  SiCloudinary,
+  SiNestjs,
+  SiTypescript,
+  SiNumpy,
+  SiOpencv,
+  SiStreamlit,
+  SiRender,
+} from "react-icons/si";
 
 export type PortfolioItem = {
   id: string; // ใช้ string
@@ -22,8 +33,8 @@ const portfolioData: PortfolioItem[] = [
     image: "/images/Portfolio/project1.png",
     tech: [
       { label: "Next.js", icon: SiNextdotjs },
-      { label: "Java", icon: FaJava  },
-      { label: "Spring Boot", icon: BiLogoSpringBoot  },
+      { label: "Java", icon: FaJava },
+      { label: "Spring Boot", icon: BiLogoSpringBoot },
       { label: "Microsoft SQL Server", icon: DiMsqlServer },
       { label: "TailwindCSS", icon: SiTailwindcss },
       { label: "Cloudinary", icon: SiCloudinary },
@@ -39,10 +50,10 @@ const portfolioData: PortfolioItem[] = [
     image: "/images/Portfolio/project2.png",
     tech: [
       { label: "Next.js", icon: SiNextdotjs },
-      { label: "Nest.js", icon: SiNestjs  },
+      { label: "Nest.js", icon: SiNestjs },
       { label: "TailwindCSS", icon: SiTailwindcss },
-      { label: "TypeScript", icon: SiTypescript  },
-      { label: "PostgreSQL", icon: BiLogoPostgresql  },
+      { label: "TypeScript", icon: SiTypescript },
+      { label: "PostgreSQL", icon: BiLogoPostgresql },
     ],
     linkURL: "",
   },
@@ -57,9 +68,7 @@ const portfolioData: PortfolioItem[] = [
       { label: "TailwindCSS", icon: SiTailwindcss },
       { label: "Node.js", icon: FaNodeJs },
       { label: "MongoDB", icon: SiMongodb },
-      { label: "Cloudinary", icon: SiCloudinary},
-
-      
+      { label: "Cloudinary", icon: SiCloudinary },
     ],
     linkURL: "",
   },
@@ -84,11 +93,24 @@ const portfolioData: PortfolioItem[] = [
     tech: [
       { label: "Python", icon: FaPython },
       { label: "OpenCV", icon: SiOpencv },
-      { label: "Numpy", icon: SiNumpy  },
+      { label: "Numpy", icon: SiNumpy },
       { label: "Streamlit", icon: SiStreamlit },
       { label: "Render", icon: SiRender },
     ],
     linkURL: "https://overlay-generator-cstu.onrender.com/",
+  },
+  {
+    id: "6",
+    title: "Homework YWC20",
+    description:
+      "Selected for the Homework Track (Programming) interview round, where candidates consumed a provided API to verify pass/fail results. I designed and built a web app using Next.js and Tailwind CSS for this challenge, advancing to the Top 20 finalists out of 273. I was then invited to a 5-day, 4-night camp to develop a project with the program.",
+    image: "/images/Portfolio/project6.png",
+    tech: [
+      { label: "Next.js", icon: SiNextdotjs },
+      { label: "TailwindCSS", icon: SiTailwindcss },
+    ],
+    linkURL:
+      "https://young-web-master-camp20-homework-track-programming.vercel.app/",
   },
 ];
 
