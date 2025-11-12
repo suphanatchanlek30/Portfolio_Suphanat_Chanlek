@@ -24,7 +24,7 @@ const aboutData = {
     {
       title: "ASCEND CO., LTD.",
       subtitle: "Frontend Developer (Intern)",
-      year: "August 2025 – Present",
+      year: "August – November 2025",
       image: "/images/About/Ascend.png",
     },
   ],
