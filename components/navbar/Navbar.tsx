@@ -48,7 +48,7 @@ export default function Navbar() {
             <FaGithub size={24} />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/suphanat-chanlek-944802305/"
+            href="https://www.linkedin.com/in/suphanat-chanlek"
             target="_blank"
             className="flex items-center justify-center bg-white text-black h-[35px] w-[60px] rounded-[8px] hover:bg-gray-200 transition"
           >
